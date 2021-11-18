@@ -20,28 +20,32 @@
             </div>
         </section>
 
-        <nav>
+        <nav> 
 
 <!--MENU LEFT-->
-            <section class="menu">
-                <div class="logo">
+
+    <!--MENU TOP-->
+            <section class="menu-top"> <!--vedi foto aggiungere altezza/ deve avere un'altezza minima-->
+                <div class="logo nomobile"> <!--mettere in none-->
                     <img src="spotify/img/logo.svg" alt="">
                 </div>
-                <div class="search">
-                    <div class="first light">
-                        <img src="spotify/img/home.svg" alt="">
-                        <span>Home</span>
-                    </div>
-                    <div class="second light">
-                        <img src="spotify/img/search.svg" alt="">
-                        <span>Cerca</span>
-                    </div>
-                    <div class="third light">
-                        <img src="spotify/img/libreria.svg" alt="">
-                        <span>La tua libreria</span>
-                    </div>
-
+                <div class="logo mobile"> <!--quello giusto, da adattare?-->
+                    <img src="spotify/img/logo-small.svg" alt="">
                 </div>
+
+                <div class="first object light">
+                    <img src="spotify/img/home.svg" alt="">
+                    <span>Home</span>
+                </div>
+                <div class="second object light">
+                    <img src="spotify/img/search.svg" alt="">
+                    <span>Cerca</span>
+                </div>
+                <div class="third object light">
+                    <img src="spotify/img/libreria.svg" alt="">
+                    <span>La tua libreria</span>
+                </div>
+
                 <div class="playlist">
                     <h3>Playlist</h3>
                     <div class="add light">
@@ -74,6 +78,10 @@
 
                     </div>
                 </div>
+            </section>
+    <!--MENU BOTTOM-->        
+            <section class="menu-bottom">
+
                 <div class="floor">
                     <div class="install light">
                         <img src="spotify/img/download.svg" alt="">
@@ -112,14 +120,22 @@
             </div>
             <div class="play">
                 <div class="up">
-
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
                 </div>
                 <div class="down">
-                    <span>0:25</span>
-                    <div class="bar light">
-                        <div class="littlebar light"></div>
+                    <div class="down-bar">
+                        <span>0:25</span>
+                        <div class="bar "> 
+                            <div class="littlebar light">
+                                <div class="ball"></div>
+                            </div>
+                        </div>
+                        <span>4:35</span>
                     </div>
-                    <span>4:35</span>
                 </div>
             </div>
             <div class="volume">
