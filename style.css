@@ -79,12 +79,12 @@ nav{
 }
 
 .object{
-    width: 70%;
+    width: 35px;
 }
 
-.logo,.object{
+.logo,.object,.playlist{
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 0;
 }
 /* CAPIRE COME METTERE BORDO SENZA PRENDERE SPAZIO
 .first{
@@ -136,7 +136,7 @@ span,h3,.new{
 }
 
 .add{
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .add span{
@@ -161,13 +161,23 @@ span,h3,.new{
 
 .profile,.install{
     text-align: center;
-    margin: 0 auto;
     width: 50%;
+    margin: 0 auto;
 }
 
 .install{
-    width: 12px;
+    width: 70%;
 }
+
+.install img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+.install span{
+    vertical-align: middle;
+}
+
 .nomobile,.first span,.second span,
 .third span,.playlist,.install span,.profile span,hr{
     display: none;
@@ -385,4 +395,47 @@ h3,h6{
 
 .listen:nth-child(odd){
     margin-right: 4%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .nomobile,.first span,.second span,
+    .third span,.playlist,.install span,.profile span,hr{
+    display: inline-block;
+    }
+    .mobile{
+        display: none;
+    }
+    nav{
+        width: 200px;
+    }
+    .object {
+        width: 70%;
+    }
+    .object a img{
+        display: inline-block;
+        width: 30px;
+        vertical-align: middle;
+    }
+    .logo,.object,.playlist{
+        margin: 0 20px;
+        padding: 5px 0;
+    }
+    .profile,.install{
+        width: 50%;
+        margin: 0 20px;
+        text-align: left;
+    }
+    .install{
+        width: 70%;
+    }
+    hr{
+        width: 80%;
+        margin: 0 20px;
+    }
+    .menu-bottom{
+        padding: 0;
+    }
+    .profile img{
+        vertical-align: middle;
+    }
 }
