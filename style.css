@@ -20,20 +20,26 @@ body{
     text-transform: uppercase;
 }
 
+.btn:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
 .btn{
     border-radius: 20px;
     border: solid 1px white;
     text-align: center;
     padding: 10px 25px;
     color: white;
+    opacity: 1;
 }
 .upgrade .btn{
     width: 160px;
     position: absolute;
-    top: 50%;
+    top: 25%;
     right: 10px;
-    transform: translate(0%,-50%);
     font-size: 10px;
+    color: white;
 }
 
 .upgrade{
@@ -48,7 +54,7 @@ body{
 /* MENU LEFT */
 
 .menu-top{
-    height: calc(100% - 80px);
+    min-height: calc(100% - 80px);
 }
 
 .menu-bottom{
@@ -57,7 +63,7 @@ body{
 }
 
 header{
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
 }
 nav{
     background-color: black;
@@ -182,7 +188,7 @@ footer{
 .commands{
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    height: 70px;
 }
 
 .song,.volume{
@@ -233,15 +239,25 @@ footer{
     width: 30%;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+    opacity: .7;
 }
 
 /* PLAY */
+
+.play-big:hover{
+    transform: scale(1.5, 1.5);
+}
 
 .up{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 50%;
+}
+
+.up i{
+    font-size: 16px;
 }
 
 .down-bar{
@@ -254,19 +270,24 @@ footer{
 
 .bar:hover .littlebar{
     background-color: rgb(70, 218, 70);
+    opacity: 1;
 }
-/*  
+ 
+.bar:hover .ball{
+    display: block;
+}
+
 .ball{
     position: absolute;
-    top: 50%;
+    top: 0;
     right: 0;
     width: 12px;
     height: 12px;
-    transform: translate(0,0);
+    transform: translate(0,-25%);
     background-color: white;
-
+    border-radius: 50%;
+    display: none;
 }
-*/
 
 
 .down-bar span{
@@ -287,7 +308,7 @@ footer{
     position: absolute;
     top: 0;
     right: 0;
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
     width: calc(100% - 50px);
     background-color: rgb(33, 33, 46);
     padding: 84px 10px 10px;
@@ -301,25 +322,53 @@ footer{
 
 .type span{
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 11px;
+    padding-right: 11px;
 }
 
-.type span{
-    padding-right:33px;
+.recently,.personal,.artists{
+    margin: 20px 0 10px 0;
 }
 
 .row{
-    margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: stretch;
 }
 
 h3,h6{
     color: white;
 }
 
+.recently .row .listen:hover img{
+    opacity: .6;
+}
+.recently .row .listen:hover i{
+    display: block;
+}
+
 .listen{
     width: 48%;
+    margin: 10px 0;
+}
+
+.listen .image-play img{
+    width: 100%;
+}
+
+.image-play{
+    position: relative;
+}
+
+.image-play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    color: white;
+    display: none;
+    transform: translate(-50%,-50%);
 }
 
 .listen img{
