@@ -12,6 +12,12 @@ body{
     height: 100vh;
 }
 
+.overscroll{
+    position: relative;
+    background-color: white;
+    color: white;
+    z-index: 5;
+}
 /* HEADER */
 
 /* BUTTON UPGRADE */
@@ -261,13 +267,15 @@ footer{
 
 .up{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 50%;
 }
 
 .up i{
     font-size: 16px;
+    margin: 0 1%;
+    cursor: pointer;
 }
 
 .down-bar{
@@ -328,12 +336,13 @@ footer{
 .type{
     text-align: center;
     line-height: 40px;
+    padding: 0 10px;
 }
 
 .type span{
     text-transform: uppercase;
-    font-size: 11px;
-    padding-right: 11px;
+    font-size: 13px;
+    padding-right: 22px;
 }
 
 .recently,.personal,.artists{
@@ -361,6 +370,7 @@ h3,h6{
 .listen{
     width: 48%;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .listen .image-play img{
@@ -437,5 +447,58 @@ h3,h6{
     }
     .profile img{
         vertical-align: middle;
+    }
+    .contain{
+        width: calc(100% - 200px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .nomobile,.first span,.second span,
+    .third span,.playlist,.install span,.profile span,hr{
+    display: inline-block;
+    }
+    .mobile{
+        display: none;
+    }
+    nav{
+        width: 200px;
+    }
+    .object {
+        width: 70%;
+    }
+    .object a img{
+        display: inline-block;
+        width: 30px;
+        vertical-align: middle;
+    }
+    .logo,.object,.playlist{
+        margin: 0 20px;
+        padding: 5px 0;
+    }
+    .profile,.install{
+        width: 50%;
+        margin: 0 20px;
+        text-align: left;
+    }
+    .install{
+        width: 70%;
+    }
+    hr{
+        width: 80%;
+        margin: 0 20px;
+    }
+    .menu-bottom{
+        padding: 0;
+    }
+    .profile img{
+        vertical-align: middle;
+    }
+    .contain{
+        width: calc(100% - 200px);
+    }
+    .listen{
+        width: 21%;
+        margin-right: 4%;
     }
 }
