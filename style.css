@@ -404,7 +404,7 @@ h3,h6{
 }
 
 .listen:nth-child(odd){
-    margin-right: 4%;
+    margin-right: 3%;
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -499,6 +499,60 @@ h3,h6{
     }
     .listen{
         width: 21%;
-        margin-right: 4%;
+        margin-right: 3%;
     }
+}
+
+@media screen and (min-width: 992px) {
+    .nomobile,.first span,.second span,
+    .third span,.playlist,.install span,.profile span,hr{
+    display: inline-block;
+    }
+    .mobile{
+        display: none;
+    }
+    nav{
+        width: 200px;
+    }
+    .object {
+        width: 70%;
+    }
+    .object a img{
+        display: inline-block;
+        width: 30px;
+        vertical-align: middle;
+    }
+    .logo,.object,.playlist{
+        margin: 0 20px;
+        padding: 5px 0;
+    }
+    .profile,.install{
+        width: 50%;
+        margin: 0 20px;
+        text-align: left;
+    }
+    .install{
+        width: 70%;
+    }
+    hr{
+        width: 80%;
+        margin: 0 20px;
+    }
+    .menu-bottom{
+        padding: 0;
+    }
+    .profile img{
+        vertical-align: middle;
+    }
+    .contain{
+        width: calc(100% - 200px);
+    }
+    .listen{
+        width: 14%;
+        margin-right: 3%;
+    }
+    .listen:nth-child(6){
+        margin:10px 0 0 0;
+    }
+
 }
